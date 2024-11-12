@@ -48,6 +48,7 @@ function NestRow({ nest }) {
     regularPrice,
     discount,
     image,
+    location,
     description,
   } = nest;
 
@@ -58,6 +59,7 @@ function NestRow({ nest }) {
       regularPrice,
       discount,
       image,
+      location,
       description,
     });
   }

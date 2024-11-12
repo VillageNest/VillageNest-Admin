@@ -106,6 +106,10 @@ function CreateNestForm({ nestToEdit = {}, onCloseModal }) {
           defaultValue={0}
           {...register("discount", {
             required: "This field is required",
+            min: {
+              value: 0,
+              message: "Discount should be 0 or positive number",
+            },
             validate: (value) =>
               value <= getValues().regularPrice ||
               "Discount should be less than regular price",
